@@ -10,23 +10,24 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/EditTextSongURL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10" >
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/button1"
+    <ImageButton
+        android:id="@+id/ButtonTestPlayPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:src="@android:drawable/ic_media_play"
+        android:contentDescription="button play pause" />
 
-    <ProgressBar
-        android:id="@+id/progressBar1"
-        style="?android:attr/progressBarStyleHorizontal"
+   
+    <SeekBar
+        android:id="@+id/SeekBarTestPlay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

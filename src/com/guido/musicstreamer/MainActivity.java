@@ -77,10 +77,10 @@ public class MainActivity extends Activity implements OnClickListener, OnTouchLi
 			
 			if(!mediaPlayer.isPlaying()){
 				mediaPlayer.start();
-				buttonPlayPause.setImageResource(R.drawable.button_pause);
+				buttonPlayPause.setImageResource(android.R.drawable.ic_media_pause);
 			}else {
 				mediaPlayer.pause();
-				buttonPlayPause.setImageResource(R.drawable.button_play);
+				buttonPlayPause.setImageResource(android.R.drawable.ic_media_play);
 			}
 			
 			primarySeekBarProgressUpdater();
@@ -103,7 +103,7 @@ public class MainActivity extends Activity implements OnClickListener, OnTouchLi
 	@Override
 	public void onCompletion(MediaPlayer mp) {
 		 /** MediaPlayer onCompletion event handler. Method which calls then song playing is complete*/
-		buttonPlayPause.setImageResource(R.drawable.button_play);
+		buttonPlayPause.setImageResource(android.R.drawable.ic_media_play);
 	}
 
 	@Override
